@@ -1,0 +1,24 @@
+.mobile{
+    background-image: url(../img/backapp.jpg);
+    height: 600px;
+    color: white;
+    .mobile__content{
+        position: relative;
+        width: 70%;
+        margin: 0 auto;
+        .mobile__left{
+            h1{
+                font-weight: 700;
+                font-size: 32px;
+            }
+        }
+        .mobile__right{
+            width: 50%;
+            img{
+                position: absolute;
+                width: 100%;
+                height: 400px;
+            }
+        }
+    }
+}

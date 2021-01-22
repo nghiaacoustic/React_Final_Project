@@ -1,0 +1,57 @@
+footer {
+  background-color: #222;
+  color: #949494;
+  font-size: 13px;
+  padding-top: 1.5%;
+}
+footer .hrFooter {
+  border-top: 1px solid #4a4a4a;
+}
+footer .pr-5 {
+  padding-right: 7.3% !important;
+}
+footer #noneD {
+  opacity: 0;
+}
+footer h3 {
+  color: white;
+  font-size: 13px;
+}
+footer li a:hover {
+  text-decoration: none;
+  color: white;
+}
+footer ul {
+  list-style: none;
+  padding-left: 0;
+}
+footer a {
+  color: #949494;
+}
+footer .partner img {
+  width: 1.9rem;
+  height: 1.9rem;
+  border-radius: 50%;
+}
+footer .partner .partner-r-1 {
+  padding-bottom: 3%;
+}
+footer .iApp img,
+footer .iSocial img {
+  width: 1.9rem;
+}
+footer .VNC {
+  width: 80px;
+  height: auto;
+  border-radius: 8px;
+}
+footer .BCT {
+  width: 130px;
+  float: right;
+}
+footer .footer__info p {
+  margin-bottom: 0;
+}
+footer .footer__info :first-child {
+  color: white;
+}

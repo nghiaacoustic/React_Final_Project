@@ -31,3 +31,31 @@
 .imgSocial {
     width: 100%;
 }
+
+.social {
+    text-align: center;
+    margin-top: 15px;
+    padding: 0 10px;
+}
+
+.SignIn_Close {
+    opacity: 1;
+    position: absolute;
+    top: -18px;
+    right: -18px;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    background-color: #081630;
+    box-shadow: 0 2px 10px 0 rgba(0, 0, 0, .5);
+    content: "";
+    cursor: pointer;
+}
+
+/* .SignIn_Close :before {
+    transform: translate(-50%, -50%) rotate(-45deg);
+}
+
+.SignIn_Close :after {
+    transform: translate(-50%, -50%) rotate(45deg);
+} */

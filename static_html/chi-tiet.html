@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- BS4 -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <!-- owl carousel -->
+    <link rel="stylesheet" href="./css/owl.carousel.min.css">
+    <link rel="stylesheet" href="./css/owl.theme.default.min.css">
+    <!-- <link rel="stylesheet" href="./css/owl.theme.default.css"> -->
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" />
+    <!-- font google -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Alegreya:wght@400;500;700&display=swap" rel="stylesheet">
+    <!-- main css -->
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/quy.css">
+</head>
+
+<body>
+    <header>
+        <!-- <div class="header__content">
+            <div class="left"><img src="./img/logo.png" alt="logo" width="50"></div>
+            <div class="mid">
+                <ul>
+                    <li><a href="">Lịch Chiếu</a></li>
+                    <li><a href="">Cụm Rạp</a></li>
+                    <li><a href="">Tin Tức</a></li>
+                    <li><a href="">Ứng Dụng</a></li>
+                </ul>
+            </div>
+            <div class="right">
+                <div>
+                    <a href=""><img src="./img/avatar.png" alt="avt" width="30" height="30"> Đăng Nhập</a>
+                </div>
+                <div>
+                    <img src="./img/location-header.png" alt="local">
+                    <select name="" id="">
+                        <option value="">Hồ Chí Minh</option>
+                        <option value="">Hà Nội</option>
+                    </select>
+                </div>
+            </div>
+        </div> -->
+
+        <nav class="navbar navbar-expand-lg navbar-light header__content">
+            <div class="left"><img src="./img/logo.png" alt="logo" width="50"></div>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#header__navbar"
+                aria-controls="header__navbar" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse mid" id="header__navbar">
+                <ul class="navbar-nav mr-auto nav__listItem">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Lịch Chiếu <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">Cụm Rạp</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">Tin Tức</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">Ứng Dụng</a>
+                    </li>
+                </ul>
+
+            </div>
+            <div class="right mr-4">
+                <div>
+                    <a href=""><img src="./img/avatar.png" alt="avt" width="30" height="30"> Đăng Nhập</a>
+                </div>
+                <div>
+                    <img src="./img/location-header.png" alt="local">
+                    <select name="" id="">
+                        <option value="">Hồ Chí Minh</option>
+                        <option value="">Hà Nội</option>
+                    </select>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div id="detailMainTop" class="backgroundMain">
+        <div class="content-bg">
+            <img src="https://s3img.vcdn.vn/123phim/2021/01/lua-deu-gap-lua-dao-the-con-heartist-c16-16105107876781.jpg"
+                class="posterLandscapeFilm">
+            <div class="styleGradient" style="background: linear-gradient(to top, rgb(10, 32, 41), transparent 100%);">
+                <button class="btn-trailer sp" data-toggle="modal" data-target="#trailer-detail"><img
+                        src="./img/play-video.png" alt="icon"></button>
+            </div>
+        </div>
+        <div class="detailMainInfo mainMaxWidth2">
+            <div class="col-sm-3 col-xs-4 filmPosterTop">
+                <div class="background-film"
+                    style="background-image: url('https://s3img.vcdn.vn/mobile/123phim/2020/12/lua-deu-gap-lua-dao-the-con-heartist-c16-16082739589858_215x318.png');">
+                    <button data-toggle="modal" data-target="#trailer-detail"><img src="./img/play-video.png"
+                            alt="icon"></button>
+                </div>
+            </div>
+            <!-- col -->
+            <div class="col-xs-12 col-sm-12 col-md-5 infoMain">
+                <span class="detailMainInfo1">15.01.2021</span>
+                <div class="parentInfo2">
+                    <span class="detailMainInfo2">
+                        <span class="ageType">C16</span>
+                        <span class="title">Lừa Đểu Gặp Lừa Đảo - The Con-Heartist </span>
+                        <span class="detailMainInfo1">128 phút - 0 IMDb - 2D/Digital</span>
+                        <button class="btnBuyTicketDetail">Mua vé</button>
+                    </span>
+                </div>
+            </div>
+            <!-- col -->
+            <div class="col-sm-2 circleStar">
+                <li class="note-display" data-note="7.50">
+                    <div class="circle">
+                        <svg width="120" height="120" class="circle__svg">
+                            <circle cx="60" cy="60" r="50" class="circle__progress circle__progress--path"></circle>
+                            <circle cx="60" cy="60" r="50" class="circle__progress circle__progress--fill"></circle>
+                        </svg>
+                        <div class="percent">
+                            <span class="percent__int">0.</span>
+                            <span class="percent__dec">00</span>
+                        </div>
+                    </div>
+                </li>
+
+                <div id="starMain" class="star" style="margin-top: 10px"><img class="smallStar" src="./img/star1.png">
+                    <img class="smallStar" src="./img/star1.png">
+                    <img class="half" src="./img/star1.2.png">
+                </div>
+                <div class="row" style="margin-top: 10px">
+                    <span class="detailMainInfo1" style="margin: auto">18 người đánh giá</span>
+                </div>
+            </div>
+        </div>
+        <!-- detailMainInfo -->
+        <div class=" contentMain">
+            <div class="mainMaxWidth2">
+                <ul class="nav nav-tabs" id="tabRap" role="tablist">
+                    <li class="nav-item">
+                        <a class="nav-link active" id="lich-chieu-tab" data-toggle="tab" href="#lich-chieu" role="tab"
+                            aria-controls="lich-chieu" aria-selected="true">Lịch chiếu</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="thong-tin-tab" data-toggle="tab" href="#thong-tin" role="tab"
+                            aria-controls="thong-tin" aria-selected="false">Thông tin</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="danh-gia-tab" data-toggle="tab" href="#danh-gia" role="tab"
+                            aria-controls="danh-gia" aria-selected="false">Đánh giá</a>
+                    </li>
+                </ul>
+
+                <div class="tab-content" id="tabRap-content">
+                    <div class="tab-pane fade show active" id="lich-chieu" role="tabpanel"
+                        aria-labelledby="lich-chieu-tab">
+                        1sasasasa
+                        sasasas</div>
+                    <div class="tab-pane fade" id="thong-tin" role="tabpanel" aria-labelledby="thong-tin-tab">2</div>
+                    <div class="tab-pane fade" id="danh-gia" role="tabpanel" aria-labelledby="danh-gia-tab">3</div>
+                </div>
+            </div>
+            <!-- mainMaxWidth2 -->
+        </div>
+        <!-- contentMain -->
+    </div>
+    <!-- detailMainTop -->
+    <footer>
+        <div class="container ">
+            <div class="row ">
+                <div class="col-md-2 ">
+                    <h3>TIX</h3>
+                    <ul>
+                        <li><a href=" ">FAQ</a></li>
+                        <li><a href=" ">Brand Guidelines</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-2 ">
+                    <h3 id="noneD ">NoneD</h3>
+                    <ul>
+                        <li><a href=" ">Thỏa thuận sử dụng</a></li>
+                        <li><a href=" ">Chính sách bảo mật</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4 pr-5 pl-4 ">
+                    <h3>ĐỐI TÁC</h3>
+                    <div class="partner ">
+                        <div class="row partner-r-1 ">
+                            <div class="col ">
+                                <a href="https://www.cgv.vn/" target="_blank"><img
+                                        src="./img/TIX - Đặt Vé Nhanh Nhất _ Trang chủ_files/cgv.png " alt=" "></a>
+                            </div>
+                            <div class="col ">
+                                <a href="https://www.bhdstar.vn/" target="_blank"><img
+                                        src="./img/TIX - Đặt Vé Nhanh Nhất _ Trang chủ_files/bhd.png " alt=" "></a>
+                            </div>
+                            <div class="col ">
+                                <a href="https://www.galaxycine.vn/" target="_blank"><img
+                                        src="./img/TIX - Đặt Vé Nhanh Nhất _ Trang chủ_files/galaxycine.png "
+                                        alt=" "></a>
+                            </div>
+                            <div class="col ">
+                                <a href="http://cinestar.com.vn/" target="_blank"> <img
+                                        src="./img/TIX - Đặt Vé Nhanh Nhất _ Trang chủ_files/cinestar.png " alt=" "></a>
+                            </div>
+                            <div class="col ">
+                                <a href="http://lottecinemavn.com/LCHS/index.aspx" target="_blank"><img
+                                        src="https://s3img.vcdn.vn/123phim/2018/09/404b8c4b80d77732e7426cdb7e24be20.png "
+                                        alt=" "></a>
+                            </div>
+                        </div>
+                        <div class="row partner-r-1 ">
+                            <div class="col ">
+                                <a href="https://www.megagscinemas.vn/" target="_blank"><img
+                                        src="./img/TIX - Đặt Vé Nhanh Nhất _ Trang chủ_files/megags.png " alt=" "></a>
+                            </div>
+                            <div class="col ">
+                                <a href="https://www.betacineplex.vn/home.htm" target="_blank"><img
+                                        src="./img/TIX - Đặt Vé Nhanh Nhất _ Trang chủ_files/bt.jpg " alt=" "></a>
+                            </div>
+                            <div class="col ">
+                                <a href="http://ddcinema.vn/" target="_blank"> <img
+                                        src="./img/TIX - Đặt Vé Nhanh Nhất _ Trang chủ_files/dongdacinema.png "
+                                        alt=" "></a>
+                            </div>
+                            <div class="col ">
+                                <a href="https://touchcinema.com/" target="_blank"><img
+                                        src="./img/TIX - Đặt Vé Nhanh Nhất _ Trang chủ_files/TOUCH.png " alt=" "></a>
+                            </div>
+                            <div class="col ">
+                                <a href="https://cinemaxvn.com/" target="_blank"><img
+                                        src="./img/TIX - Đặt Vé Nhanh Nhất _ Trang chủ_files/cnx.jpg " alt=" "></a>
+                            </div>
+                        </div>
+                        <div class="row partner-r-1 ">
+                            <div class="col ">
+                                <a href="https://starlight.vn/" target="_blank"> <img
+                                        src="./img/TIX - Đặt Vé Nhanh Nhất _ Trang chủ_files/STARLIGHT.png "
+                                        alt=" "></a>
+                            </div>
+                            <div class="col ">
+                                <a href="https://www.dcine.vn/" target="_blank"><img
+                                        src="./img/TIX - Đặt Vé Nhanh Nhất _ Trang chủ_files/dcine.png " alt=" "></a>
+                            </div>
+                            <div class="col ">
+                                <a href="https://zalopay.vn/" target="_blank"> <img
+                                        src="./img/TIX - Đặt Vé Nhanh Nhất _ Trang chủ_files/zalopay_icon.png "
+                                        alt=" "></a>
+                            </div>
+                            <div class="col ">
+                                <a href="https://www.payoo.vn/" target="_blank"> <img
+                                        src="./img/TIX - Đặt Vé Nhanh Nhất _ Trang chủ_files/payoo.jpg " alt=" "></a>
+                            </div>
+                            <div class="col ">
+                                <a href="https://portal.vietcombank.com.vn/Pages/Home.aspx" target="_blank"> <img
+                                        src="./img/TIX - Đặt Vé Nhanh Nhất _ Trang chủ_files/VCB.png " alt=" "></a>
+                            </div>
+                        </div>
+                        <div class="row partner-r-1 ">
+                            <div class="col ">
+                                <a href="https://www.agribank.com.vn/" target="_blank"> <img
+                                        src="./img/TIX - Đặt Vé Nhanh Nhất _ Trang chủ_files/AGRIBANK.png " alt=" "></a>
+                            </div>
+                            <div class="col ">
+                                <a href="https://www.vietinbank.vn/web/home/vn/index.html" target="_blank"> <img
+                                        src="./img/TIX - Đặt Vé Nhanh Nhất _ Trang chủ_files/VIETTINBANK.png "
+                                        alt=" "></a>
+                            </div>
+                            <div class="col ">
+                                <a href="https://www.indovinabank.com.vn/" target="_blank"> <img
+                                        src="./img/TIX - Đặt Vé Nhanh Nhất _ Trang chủ_files/IVB.png " alt=" "></a>
+                            </div>
+                            <div class="col ">
+                                <a href="https://webv3.123go.vn/" target="_blank"> <img
+                                        src="./img/TIX - Đặt Vé Nhanh Nhất _ Trang chủ_files/123go.png " alt=" "></a>
+                            </div>
+                            <div class="col ">
+                                <a href="https://laban.vn/" target="_blank"> <img
+                                        src="./img/TIX - Đặt Vé Nhanh Nhất _ Trang chủ_files/laban.png " alt=" "></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-2 iApp ">
+                    <h3>MOBILE APP</h3>
+                    <a href=" " class="pr-3 "><img src="./img/TIX - Đặt Vé Nhanh Nhất _ Trang chủ_files/apple-logo.png "
+                            alt=" "></a>
+                    <a href=" "><img src="./img/TIX - Đặt Vé Nhanh Nhất _ Trang chủ_files/android-logo.png "
+                            alt=" "></a>
+                </div>
+                <div class="col-md-2 iSocial ">
+                    <h3>SOCIAL</h3>
+                    <a href=" " class="pr-3 "><img
+                            src="./img/TIX - Đặt Vé Nhanh Nhất _ Trang chủ_files/facebook-logo.png " alt=" "></a>
+                    <a href=" "><img src="./img/TIX - Đặt Vé Nhanh Nhất _ Trang chủ_files/zalo-logo.png " alt=" "></a>
+                </div>
+            </div>
+            <hr class=hrFooter>
+            <div class="row ">
+                <div class="col-12 col-sm-1 ">
+                    <img class="VNC " src="./img/TIX - Đặt Vé Nhanh Nhất _ Trang chủ_files/zion-logo.jpg " alt=" ">
+                </div>
+                <div class="col-12 col-sm-9 footer__info ">
+                    <p>TIX – SẢN PHẨM CỦA CÔNG TY CỔ PHẦN ZION</p>
+                    <p>Địa chỉ: Z06 Đường số 13, Phường Tân Thuận Đông, Quận 7, Tp. Hồ Chí Minh, Việt Nam.</p>
+                    <p>Giấy chứng nhận đăng ký kinh doanh số: 0101659783,<br>đăng ký thay đổi lần&nbsp;thứ&nbsp;30,
+                        ngày&nbsp;22&nbsp;tháng&nbsp;01&nbsp;năm&nbsp;2020 do
+                        Sở&nbsp;kế&nbsp;hoạch&nbsp;và&nbsp;đầu&nbsp;tư Thành phố Hồ Chí Minh cấp.</p>
+                    <p>Số Điện Thoại (Hotline): 1900&nbsp;545&nbsp;436<br>Email: <a href="mailto:support@tix.vn "
+                            style="color: #FB4226; ">support@tix.vn</a></p>
+                </div>
+                <div class="col-12 col-sm-2 ">
+                    <a href=" ">
+                        <img class="BCT "
+                            src="https://s3img.vcdn.vn/123phim/2020/03/d1e6bd560daa9e20131ea8a0f62e87f8.png " alt=" ">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Modal -->
+    <div class="modal fade" id="trailer-detail" tabindex="-1" role="dialog" aria-labelledby="trailer-detail"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#fff" class="bi bi-x-circle"
+                        viewBox="0 0 16 16">
+                        <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
+                        <path
+                            d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z" />
+                    </svg>
+                </button>
+                <div class="trailer-div">
+                    <iframe class="trailer-detail" width="100%" height="100%" allowfullscreen="" frameborder="0"
+                        src="https://www.youtube.com/embed/NWEe2BGhOUA"></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- thư viện hỗ trợ -->
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js "></script>
+    <!-- BS4 js -->
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js "
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN "
+        crossorigin="anonymous "></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js "
+        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV "
+        crossorigin="anonymous "></script>
+    <script src="./js//main.js"></script>
+</body>
+
+</html>
+
+</html>

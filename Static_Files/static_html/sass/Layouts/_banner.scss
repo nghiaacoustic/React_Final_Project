@@ -1,0 +1,140 @@
+        .banner {
+            margin-top: 60px;
+            .banner__content {
+                position: relative;
+                cursor: pointer;
+                .play {
+                    position: absolute;
+                    display: none;
+                    top: 45%;
+                    left: 45%;
+                    width: 80px;
+                    height: 80px;
+                    &:hover {
+                        opacity: 0.7;
+                    }
+                }
+                .banner1 {
+                    background-image: url(../img/banner1.webp);
+                    background-size: cover;
+                    position: absolute;
+                    width: 100%;
+                    height: 580px;
+                    &:hover .play {
+                        display: block;
+                    }
+                }
+                .banner2 {
+                    background-image: url(../img/banner2.jpg);
+                    background-size: cover;
+                    width: 100%;
+                    height: 580px;
+                    &:hover .play {
+                        display: block;
+                    }
+                }
+                .banner3 {
+                    background-image: url(../img/banner3.jpg);
+                    background-size: cover;
+                    width: 100%;
+                    height: 580px;
+                    &:hover .play {
+                        display: block;
+                    }
+                }
+                .banner4 {
+                    background-image: url(../img/banner4.jpg);
+                    background-size: cover;
+                    width: 100%;
+                    height: 580px;
+                    &:hover .play {
+                        display: block;
+                    }
+                }
+                .banner5 {
+                    background-image: url(../img/banner5.png);
+                    background-size: cover;
+                    width: 100%;
+                    height: 580px;
+                    &:hover .play {
+                        display: block;
+                    }
+                }
+                .order {
+                    text-align: center;
+                    z-index: 99;
+                    position: absolute;
+                    bottom: -7%;
+                    left: 5%;
+                    &:hover .play {
+                        opacity: 0;
+                    }
+                    select {
+                        cursor: pointer;
+                        margin: 10px 5px;
+                        padding: 20px 0;
+                        border: none;
+                        &:focus {
+                            outline: none;
+                        }
+                    }
+                    .order__content {
+                        box-shadow: 0 0 15px rgba(0, 0, 0, .3);
+                        background-color: white;
+                        border-radius: 5px;
+                        width: 78%;
+                        margin: 0 auto;
+                        #phim {
+                            width: 30%;
+                        }
+                        #rap {
+                            width: 16%;
+                        }
+                        #ngayxem {
+                            width: 16%;
+                        }
+                        #suatchieu {
+                            width: 16%;
+                        }
+                    }
+                }
+            }
+        }
+        
+        @media screen and (min-width:275px) and(max-width:414px) {
+            .order {
+                display: none;
+            }
+            .menu {
+                width: 100%;
+                left: 0 !important;
+                #myTab {
+                    li {
+                        padding-left: 11.11%;
+                        display: inline-block;
+                        a {
+                            font-size: 18px;
+                        }
+                    }
+                }
+            }
+        }
+        
+        @media screen and (min-width:415px) and(max-width:1024px) {
+            .order {
+                display: none;
+            }
+            .menu {
+                width: 100%;
+                left: 0 !important;
+                #myTab {
+                    li {
+                        padding-left: 19.11%;
+                        display: inline-block;
+                        a {
+                            font-size: 24px;
+                        }
+                    }
+                }
+            }
+        }

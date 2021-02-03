@@ -1,0 +1,130 @@
+header {
+  z-index: 999;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  background-color: white;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+  transition: all 0.2s;
+}
+header:hover {
+  background-color: white;
+}
+header .navbar {
+  padding: 0.5rem 0 !important;
+}
+header .right {
+  position: absolute;
+  display: flex;
+  top: 30%;
+  right: 0%;
+}
+header .right div {
+  font-size: 13px;
+  padding-right: 15px;
+}
+header .right div a {
+  color: #9b9b9b;
+}
+header .right img {
+  border-radius: 50%;
+}
+header .right select {
+  background: none;
+  margin-top: 3px;
+  color: #9b9b9b;
+  font-size: 13px;
+  padding-right: 10px;
+  border: none;
+}
+header .right select:focus {
+  outline: none;
+}
+header .header__content {
+  position: relative;
+  width: 98%;
+  margin: 0 auto;
+  align-items: center;
+  display: flex;
+}
+header .header__content a {
+  text-decoration-line: none;
+}
+header .header__content .mid {
+  position: absolute;
+  left: 33%;
+  top: 21%;
+}
+header .header__content .mid ul {
+  display: flex;
+}
+header .header__content .mid ul li {
+  padding: 0 10px;
+  list-style-type: none;
+}
+header .header__content .mid ul li a {
+  color: #000;
+  font-size: 14px;
+}
+
+@media screen and (min-width: 275px) and (max-width: 414px) {
+  .banner3,
+.banner2,
+.banner1,
+.banner4,
+.banner5 {
+    background-position: center;
+    height: 180px !important;
+  }
+
+  .owl-nav,
+.owl-dots {
+    display: none;
+  }
+
+  .mid {
+    left: 55% !important;
+    top: 100% !important;
+    right: 0;
+  }
+  .mid .nav__listItem {
+    background: white;
+    margin-right: 50px;
+  }
+  .mid .nav__listItem li a {
+    padding-left: 29%;
+    font-size: 0.8em;
+  }
+
+  .right {
+    margin-right: 3rem !important;
+  }
+}
+@media screen and (min-width: 415px) and (max-width: 1024px) {
+  .banner3,
+.banner2,
+.banner1,
+.banner4,
+.banner5 {
+    background-position: center;
+    height: 450px !important;
+  }
+
+  .mid {
+    left: 77% !important;
+    top: 100% !important;
+    right: 0;
+  }
+  .mid .nav__listItem {
+    background: white;
+    margin-right: 50px;
+  }
+  .mid .nav__listItem li a {
+    padding-left: 30%;
+    font-size: 1.01em;
+  }
+
+  .right {
+    margin-right: 3rem !important;
+  }
+}

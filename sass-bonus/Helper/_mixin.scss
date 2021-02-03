@@ -1,0 +1,33 @@
+@mixin tabMenu {
+        a{
+            color: black;
+            font-size: 24px;
+            border: none;
+        }
+        .nav-link.active{
+            color: #fa5238;
+        }
+        .nav-tabs{
+            border-bottom: 0;
+     }
+}
+@mixin starDate {
+    background-color: rgba(12,27,54,.8);
+    border: 1px solid #1f2e46;
+    border-radius: 5px;
+    text-align: center;
+    right: 7%;
+    z-index: 999;
+    position: absolute;
+}
+@mixin respond-to($breakpoint) {
+    @if map-has-key($map: $breakpoints, $key: $breakpoint){
+        $value: map-get($map: $breakpoints, $key: $breakpoint);
+        @media screen and (max-width: $value) {
+            @content;
+        }
+    }
+    @else{
+        @warn "breakpoint không tồn tại trong breakpoints"
+    }
+}

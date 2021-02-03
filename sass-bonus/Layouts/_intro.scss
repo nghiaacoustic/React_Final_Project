@@ -1,0 +1,167 @@
+        .intro {
+            height: 900px;
+            .menuIntro {
+                left: 33%;
+                position: absolute;
+                @include tabMenu();
+            }
+            .tab-content {
+                margin-top: 70px;
+                position: absolute;
+                .intro__content {
+                    width: 70%;
+                    margin: 0 auto;
+                    .top {
+                        margin-bottom: 20px;
+                    }
+                    .bot {
+                        margin-bottom: 50px;
+                    }
+                    button {
+                        position: absolute;
+                        left: 45%;
+                        font-size: 14px;
+                        color: #949494;
+                        border: 1px solid #949494;
+                        border-radius: 4px;
+                        text-align: center;
+                        background: 0 0;
+                        padding: 7px 25px;
+                        transition: all .2s;
+                        margin: auto;
+                        &:hover {
+                            background-color: $color-organe-0;
+                            border: $color-organe-0 solid 1px;
+                            color: white;
+                        }
+                    }
+                    .row {
+                        .left,
+                        .right {
+                            img {
+                                width: 100%;
+                                border-radius: 5px;
+                            }
+                            a {
+                                text-decoration-line: none;
+                            }
+                            h1 {
+                                overflow: hidden;
+                                text-overflow: ellipsis;
+                                line-height: 20px;
+                                height: 42px;
+                                font-size: 16px;
+                                transition: color .2s;
+                                margin-bottom: 5px;
+                                color: #000;
+                                &:hover {
+                                    color: $color-organe-0;
+                                }
+                            }
+                            p {
+                                font-size: 14px;
+                                color: #4a4a4a;
+                                font-family: "SF Regular";
+                                padding: 0 5px 0 0;
+                                line-height: 19px;
+                                letter-spacing: .17px;
+                                overflow: hidden;
+                                text-overflow: ellipsis;
+                                height: 55px;
+                                margin-bottom: 15px;
+                            }
+                        }
+                        .rightLast {
+                            .item {
+                                display: flex;
+                                margin-bottom: 10px;
+                                width: 15%;
+                                img {
+                                    border-radius: 5px;
+                                    width: 100%;
+                                }
+                                p {
+                                    color: black;
+                                    margin-top: -5px;
+                                    padding-left: 10px;
+                                    font-size: 16px;
+                                    position: absolute;
+                                    &:hover {
+                                        color: $color-organe-0;
+                                    }
+                                }
+                            }
+                        }
+                        i {
+                            cursor: pointer;
+                            font-size: 14px;
+                            color: rgb(172, 172, 172);
+                            margin-right: 20px;
+                            transition: all 0.5s;
+                            &:hover {
+                                font-size: 16px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        
+        @media screen and (min-width:275px) and(max-width:414px) {
+            .intro {
+                .tab-content {
+                    margin-top: 110px;
+                }
+                .intro__content {
+                    button {
+                        left: 34% !important;
+                        bottom: .5px;
+                    }
+                }
+                height: 1545px;
+                .menuIntro {
+                    left: 12% !important;
+                    #home-tab {
+                        font-size: 16px !important;
+                    }
+                    #myTab {
+                        .nav-link {
+                            padding: .5em
+                        }
+                    }
+                }
+                .top,
+                .bot {
+                    p {
+                        font-size: 13px !important;
+                    }
+                    .right {
+                        margin-right: 0 !important;
+                    }
+                }
+                #myTabContent {}
+            }
+        }
+        
+        @media screen and (min-width: 415px) and(max-width: 1024px) {
+            .intro {
+                height: 750px;
+                .menuIntro {
+                    left: 23% !important;
+                }
+                .intro__content {
+                    .right {
+                        margin-right: 0 !important;
+                    }
+                    .bot {
+                        p {
+                            font-size: 10px !important;
+                            line-height: 1.2em;
+                        }
+                    }
+                    button {
+                        left: 44% !important;
+                    }
+                }
+            }
+        }

@@ -1,0 +1,17 @@
+//Helper
+@import './Helper/mixin';
+@import './Helper/variables';
+
+//Base
+@import './Base/reset';
+@import './Base/normalized';
+
+//Layout
+@import './Layouts/header';
+@import './Layouts/banner';
+@import './Layouts/listPhim';
+@import './Layouts/movieTheater';
+@import './Layouts/intro';
+@import './Layouts/mobile';
+@import  './Layouts/contact';
+@import './Layouts/footer';

@@ -1,0 +1,58 @@
+.SignIn__backGround {
+  /* display: block; */
+  width: 100vw;
+  height: 100vh;
+  background-size: contain;
+  background-position: center;
+  position: relative;
+}
+.SignIn__backGround .SignIn__box {
+  position: absolute;
+  background-image: linear-gradient(to bottom, rgba(20, 50, 93, 0.9), rgba(8, 22, 48, 0.9));
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.45);
+  max-width: 360px;
+  padding: 40px 32px 30px;
+  text-align: center;
+  color: #fff;
+  border-radius: 6px;
+}
+.SignIn__backGround .SignIn__box #box__logo {
+  width: 209px;
+  margin-bottom: 96px;
+  cursor: pointer;
+}
+.SignIn__backGround .SignIn__box .SignIn__message {
+  font-size: 14px;
+}
+.SignIn__backGround .SignIn__box .imgSocial {
+  width: 100%;
+}
+.SignIn__backGround .SignIn__box .social {
+  text-align: center;
+  margin-top: 15px;
+  padding: 0 10px;
+}
+.SignIn__backGround .SignIn__box .SignIn_Close {
+  opacity: 1;
+  position: absolute;
+  top: -18px;
+  right: -18px;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background-color: #081630;
+  box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.5);
+  content: "";
+  cursor: pointer;
+}
+
+/* .SignIn_Close :before {
+    transform: translate(-50%, -50%) rotate(-45deg);
+}
+
+.SignIn_Close :after {
+    transform: translate(-50%, -50%) rotate(45deg);
+} */

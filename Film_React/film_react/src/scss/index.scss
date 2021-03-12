@@ -1,0 +1,19 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+@import './Helper/mixin';
+@import './Helper/variables';
+
+@import './header';
+@import'./carousel';
+@import './listMovie';
+@import './theater';
+@import './news';
+@import './contact';
+@import './footer';
+@import './adminPage';
+@import './login';
+

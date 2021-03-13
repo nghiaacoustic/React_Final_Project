@@ -12,14 +12,16 @@ import DashBoardPage from './container/AdminTemplate/DashboardPage'
 import Login from './components/Login';
 import { BrowserRouter, Route, Switch } from "react-router-dom";
 import Facebook from './components/Login/FacebookLogin';
+import FilmInsert from './components/FilmInsert';
 function App() {
   return (
     <>
+    <FilmInsert/>
       {/* <Facebook/> */}
       {/* <Login /> */}
       {/* <NavbarHome /> */}
-      <Carousel /> 
-      <ListMoviePage />
+      {/* <Carousel />  */}
+      {/* <ListMoviePage /> */}
       {/* <DetailsMovie/> */}
       {/* <Theater/> */}
       {/* <News//> */}

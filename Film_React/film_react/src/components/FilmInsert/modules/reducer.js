@@ -1,6 +1,4 @@
-import * as ActionType from './constants'
-
-
+import * as ActionType from "./constant"
 
 let initialState = {
     loading: false,
@@ -8,20 +6,20 @@ let initialState = {
     error: null
 }
 
-const listMovieReducer = (state = initialState, action) => {
+const insertFilmReducer = (state = initialState, action) => {
     switch (action.type) {
 
-        case ActionType.LIST_MOVIE_REQUEST:
+        case ActionType.INSERT_REQUEST:
             state.loading = true;
             state.data = null;
             state.error = null;
             return { ...state };
-        case ActionType.LIST_MOVIE_SUCCESS:
+        case ActionType.INSERT_SUCCESS:
             state.loading = false;
             state.data = action.payload;
             state.error = null;
             return { ...state };
-        case ActionType.LIST_MOVIE_FAILED:
+        case ActionType.INSERT_FAILED:
             state.loading = false;
             state.data = null;
             state.error = action.payload;
@@ -30,4 +28,4 @@ const listMovieReducer = (state = initialState, action) => {
     }
 }
 
-export default listMovieReducer
+export default insertFilmReducer
